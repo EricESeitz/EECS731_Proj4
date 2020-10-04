@@ -50,3 +50,20 @@ Actions:
 - Convert team1, team2 to integers via one-hot pd.get_dummies
 
 -------------------------------------------------------------------------
+"Build one or more regression models to determine the scores for each team using the other columns as features"
+I'm going to be trying Linear Regression first, it seems like the simplest option to start with. 
+Following:
+https://notebooks.azure.com/keshanmuga/projects/2018-Linear-Regression/html/Example%20Linear%20Regression%20-%20Cricket%20Chirps.ipynb
+and
+https://www.wintellect.com/creating-a-simple-linear-regression-machine-learning-model-with-scikit-learn/
+
+I'll begin by moving the score1 and score2 to the beginning of the columns. score1 and score2 are my dependent variables, other features will be independent
+
+I decided to try the ".corr()" function built into pandas to try and spot any correlation, it seems like a very useful function to me though with the number of
+columns I have it might be a bit overwhelming.
+Using result1, result2 sorted columns I see that:
+rating_prob
+elo_post
+rating_post
+for score1 and score2 are the three highest correlations. I guess I should focus on these. 
+
