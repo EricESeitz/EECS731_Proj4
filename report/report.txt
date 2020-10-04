@@ -1,0 +1,40 @@
+EECS 731 Project 4 - Major Leagues
+Main goal:
+Build one or more regression models to determine the scores for each team using the other columns as features
+
+Initial setup:
+Data downloaded from: https://github.com/fivethirtyeight/data/tree/master/mlb-elo
+I'll be using the mlb_elo.csv file as that contains data from 2020 back to the 1800's.
+As a note for column names, I don't really know much about Baseball myself so some explenations are needed:
+Column          Definition
+date 	        Date of game
+season 	        Year of season
+neutral 	    Whether game was on a neutral site
+playoff 	    Whether game was in playoffs, and the playoff round if so
+team1 	        Abbreviation for home team
+team2 	        Abbreviation for away team
+elo1_pre 	    Home team's Elo rating before the game
+elo2_pre 	    Away team's Elo rating before the game
+elo_prob1 	    Home team's probability of winning according to Elo ratings
+elo_prob2 	    Away team's probability of winning according to Elo ratings
+elo1_post 	    Home team's Elo rating after the game
+elo2_post 	    Away team's Elo rating after the game
+rating1_pre 	Home team's rating before the game
+rating2_pre 	Away team's rating before the game
+pitcher1 	    Name of home starting pitcher
+pitcher2 	    Name of away starting pitcher
+pitcher1_rgs 	Home starting pitcher's rolling game score before the game
+pitcher2_rgs 	Away starting pitcher's rolling game score before the game
+pitcher1_adj 	Home starting pitcher's adjustment to their team's rating
+pitcher2_adj 	Away starting pitcher's adjustment to their team's rating
+rating_prob1 	Home team's probability of winning according to team ratings and starting pitchers
+rating_prob2 	Away team's probability of winning according to team ratings and starting pitchers
+rating1_post 	Home team's rating after the game
+rating2_post 	Away team's rating after the game
+score1 	        Home team's score
+score2 	        Away team's score
+
+"Formulate one or two ideas on how feature engineering would help the data set to establish additional value using exploratory data analysis"
+My first look over the data is a bit overwhelming to be honest. There's quite a few possible features here and I'm not 100% sure what carries more impact on the game scores.
+So far the only thing that looks unnecessary might be the date and season since I can't think of how those would effect the outcome of a game themselves.
+I may remove the date/season and convert the team appreviations via one-hot encloding. Most other features are numerical so I believe it's best to have matching types.
