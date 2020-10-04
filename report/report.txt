@@ -67,3 +67,12 @@ elo_post
 rating_post
 for score1 and score2 are the three highest correlations. I guess I should focus on these. 
 
+I decided to use score1 for the testing on this go-around
+Comparting our test and prediction via
+#compare the predictions to the test set [score1]
+print(score1_pred)
+print(test_set_full["score1"])
+
+We see the prediction giving: 7.73768975  4.87448344  6.59622956 and the test scores giving: 7, 4, 9. Fairly close I think
+Calculating the coefficient of determination between the test and prediction we get 0.806, 80% is pretty good in my opinion.
+
