@@ -76,3 +76,7 @@ print(test_set_full["score1"])
 We see the prediction giving: 7.73768975  4.87448344  6.59622956 and the test scores giving: 7, 4, 9. Fairly close I think
 Calculating the coefficient of determination between the test and prediction we get 0.806, 80% is pretty good in my opinion.
 
+Results:
+While we have a prediction made and it seems fairly accurate I'm not sure this satisfies the original goal of predicting TEAM scores. 
+I guess it some level it does as it matches scores1 per game and you could extrapolate out the teams from that but I feel as though this isn't what was expected. 
+I'll try another model tomorrow.
