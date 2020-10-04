@@ -38,3 +38,15 @@ score2 	        Away team's score
 My first look over the data is a bit overwhelming to be honest. There's quite a few possible features here and I'm not 100% sure what carries more impact on the game scores.
 So far the only thing that looks unnecessary might be the date and season since I can't think of how those would effect the outcome of a game themselves.
 I may remove the date/season and convert the team appreviations via one-hot encloding. Most other features are numerical so I believe it's best to have matching types.
+
+After looking at the data types, pitcher1 and pitcher2 (names of the pitchers) are not needed and will also be removed to streamline the features.
+Most other data types seem to be float64, this matches my idea of converting them all to similar data types.
+elo_prob1, elo_prob2 also don't seem super useful and will be removed 
+
+Actions:
+- Remove pitcher1, pitcher2 columns
+- Remove elo_prob1, elo_prob2 columns
+- Remove date, season columns
+- Convert team1, team2 to integers via one-hot pd.get_dummies
+
+-------------------------------------------------------------------------
