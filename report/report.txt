@@ -79,4 +79,4 @@ Calculating the coefficient of determination between the test and prediction we 
 Results:
 While we have a prediction made and it seems fairly accurate I'm not sure this satisfies the original goal of predicting TEAM scores. 
 I guess it some level it does as it matches scores1 per game and you could extrapolate out the teams from that but I feel as though this isn't what was expected. 
-I'll try another model tomorrow.
+I'd be interested to know how other people solved this project.
